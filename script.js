@@ -12,7 +12,7 @@ $("#search-button").on("click", function () {
 
     let userInput = $("#user-input").val().trim();
 
-    const queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${userInput}&APPID=e3dcee7ffae7d41114ef66eb6380a806&units=imperial`;
+    const queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${userInput}&APPID=e3dcee7ffae7d41114ef66eb6380a806&units=imperial`;
 
     $.ajax({
         url: queryURL,
@@ -31,7 +31,7 @@ $("#search-button").on("click", function () {
         let lonVariable = response.coord.lon;
         let latVariable = response.coord.lat;
 
-        const queryURL2 = `http://api.openweathermap.org/data/2.5/uvi?appid=e3dcee7ffae7d41114ef66eb6380a806&lat=${latVariable}&lon=${lonVariable}`;
+        const queryURL2 = `https://api.openweathermap.org/data/2.5/uvi?appid=e3dcee7ffae7d41114ef66eb6380a806&lat=${latVariable}&lon=${lonVariable}`;
 
         
         $.ajax({
@@ -56,7 +56,7 @@ $("#search-button").on("click", function () {
         });
 
 
-        const queryURL3 = `http://api.openweathermap.org/data/2.5/forecast?q=${userInput}&appid=e3dcee7ffae7d41114ef66eb6380a806&units=imperial`;
+        const queryURL3 = `https://api.openweathermap.org/data/2.5/forecast?q=${userInput}&appid=e3dcee7ffae7d41114ef66eb6380a806&units=imperial`;
 
         $.ajax({
             url: queryURL3,
