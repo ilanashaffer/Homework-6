@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="p-2 text-center border border-primary m-0" id="title">
+            <img src="https://www.freeiconspng.com/uploads/weather-icon-png-5.png" alt="weather icon" width="150px">
+            Weather Dashboard
+        </h1>
+    </header>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-4 p-3 bg-primary section1">
+
+                <input type="text" id="user-input" placeholder="Search">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+                
+                <p class="h6 pt-3 pb-1" id="recent-searches-text">Recent Searches</p>
+                <ul class="list-group" id="ul-list">
+                </ul>
+
+            </div>
+            <div class="col-8 p-3 bg-warning section2">
+                <div class="card mb-2">
+                    <div class="card-body">
+                      <div id="weather-output">
+                        <p id="your-weather">Find your weather.</p>
+                        <ul class="list-group" id="weather-list">
+                            <li class="weather-li" id="li1"></li>
+                            <li class="weather-li" id="li2"></li>
+                            <li class="weather-li" id="li3"></li>
+                            <li class="weather-li" id="li4"></li>
+                            <li class="weather-li" id="li5"></li>
+                            <li class="weather-li" id="li6"></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="small-card-container hide" id="small-container">
+
+                  <div class="card small-card" style="width: 9rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" id="card-title-1"></h5>
+                      <p class="card-text" id="card-subtitle-1"></p>
+                      <p class="card-text" id="card-p-1"></p>
+                    </div>
+                  </div>
+
+                  <div class="card small-card" style="width: 9rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" id="card-title-2"></h5>
+                      <p class="card-text" id="card-subtitle-2"></p>
+                      <p class="card-text" id="card-p-2"></p>
+                    </div>
+                  </div>
+
+                  <div class="card small-card" style="width: 9rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" id="card-title-3"></h5>
+                      <p class="card-text"  id="card-subtitle-3"></p>
+                      <p class="card-text"  id="card-p-3"></p>
+                    </div>
+                  </div>
+
+                  <div class="card small-card" style="width: 9rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" id="card-title-4"></h5>
+                      <p class="card-text" id="card-subtitle-4"></p>
+                      <p class="card-text" id="card-p-4"></p>
+                    </div>
+                  </div>
+
+                  <div class="card small-card" style="width: 9rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" id="card-title-5"></h5>
+                      <p class="card-text" id="card-subtitle-5"></p>
+                      <p class="card-text" id="card-p-5"></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

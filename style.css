@@ -1,0 +1,63 @@
+.container {
+    height: 500px;
+}
+
+.weather-li {
+    list-style-type: none;
+}
+
+.section1 {
+    height: 525px;
+}
+
+.section2 {
+    height: 525px;
+}
+
+.small-card {
+    float: left;
+    margin: 0.75px;
+}
+
+#title {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+#your-weather {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+span {
+    padding: 6px 10px;
+    color: white;
+    border-radius: .65em;
+}
+
+li {
+    padding: 2px;
+}
+
+#li1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#recent-searches-text {
+    color: white;
+}
+
+#user-input {
+    padding: 10px;
+    border-radius: 0.75em;
+}
+
+#search-button {
+    padding: 10px;
+    border-radius: 0.5em;
+}
+
+.hide {
+    display: none;
+}
