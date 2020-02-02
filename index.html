@@ -7,88 +7,84 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Weather App</title>
+    <title>Weather Dashboard</title>
 </head>
 <body>
-
     <header>
-        <h1 class="p-2 text-center border border-primary m-0" id="title">
-            <img src="https://www.freeiconspng.com/uploads/weather-icon-png-5.png" alt="weather icon" width="150px">
+        <p id="title" class="h1 p-5 text-center border m-0">
             Weather Dashboard
-        </h1>
+        </p>
     </header>
 
     <div class="container">
-
         <div class="row">
-            <div class="col-4 p-3 bg-primary section1">
-
-                <input type="text" id="user-input" placeholder="Search">
-                <button id="search-button"><i class="fas fa-search"></i></button>
-                
+            <div class="col-3 p-3 section1">
+                <input type="text" id="user-input" placeholder="City Name">
+                <button id="search-button">Search</button>
                 <p class="h6 pt-3 pb-1" id="recent-searches-text">Recent Searches</p>
                 <ul class="list-group" id="ul-list">
                 </ul>
-
             </div>
-            <div class="col-8 p-3 bg-warning section2">
-                <div class="card mb-2">
-                    <div class="card-body">
-                      <div id="weather-output">
-                        <p id="your-weather">Find your weather.</p>
-                        <ul class="list-group" id="weather-list">
-                            <li class="weather-li" id="li1"></li>
-                            <li class="weather-li" id="li2"></li>
-                            <li class="weather-li" id="li3"></li>
-                            <li class="weather-li" id="li4"></li>
-                            <li class="weather-li" id="li5"></li>
-                            <li class="weather-li" id="li6"></li>
-                        </ul>
+            <div class="col-9 p-3 section2">
+                    <p class="h3" id="your-weather">Search for your weather now!</p>
+                    <div class="clearfix">
+                      <p class="h2" id="current-city"></p>
+                      <img id="current-icon" src="">
+                    </div>
+                    <ul class="list-group" id="weather-list">
+                        <li class="weather-li" id="li1"></li>
+                        <li class="weather-li" id="li2"></li>
+                        <li class="weather-li" id="li3"></li>
+                        <li class="weather-li" id="li4"></li>
+                    </ul>
+
+                  <div id="small-container" class="small-card-container pt-3 hide">
+                    <p class="h3 mt-2 ml-3 hide" id="forecast">5-Day Forecast</p>
+
+                    <div class="card small-card">
+                      <div class="card-body">
+                        <h5 class="card-title" id="card-title-1"></h5>
+                        <img id="icon-1" class="icon" src="">
+                        <p class="card-text" id="card-subtitle-1"></p>
+                        <p class="card-text" id="card-p-1"></p>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="small-card-container hide" id="small-container">
-
-                  <div class="card small-card" style="width: 9rem;">
-                    <div class="card-body">
-                      <h5 class="card-title" id="card-title-1"></h5>
-                      <p class="card-text" id="card-subtitle-1"></p>
-                      <p class="card-text" id="card-p-1"></p>
+                    <div class="card small-card">
+                      <div class="card-body">
+                        <h5 class="card-title" id="card-title-2"></h5>
+                        <img id="icon-2" class="icon" src="">
+                        <p class="card-text" id="card-subtitle-2"></p>
+                        <p class="card-text" id="card-p-2"></p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="card small-card" style="width: 9rem;">
-                    <div class="card-body">
-                      <h5 class="card-title" id="card-title-2"></h5>
-                      <p class="card-text" id="card-subtitle-2"></p>
-                      <p class="card-text" id="card-p-2"></p>
+                    <div class="card small-card">
+                      <div class="card-body">
+                        <h5 class="card-title" id="card-title-3"></h5>
+                        <img id="icon-3" class="icon" src="">
+                        <p class="card-text"  id="card-subtitle-3"></p>
+                        <p class="card-text"  id="card-p-3"></p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="card small-card" style="width: 9rem;">
-                    <div class="card-body">
-                      <h5 class="card-title" id="card-title-3"></h5>
-                      <p class="card-text"  id="card-subtitle-3"></p>
-                      <p class="card-text"  id="card-p-3"></p>
+                    <div class="card small-card">
+                      <div class="card-body">
+                        <h5 class="card-title" id="card-title-4"></h5>
+                        <img id="icon-4" class="icon" src="">
+                        <p class="card-text" id="card-subtitle-4"></p>
+                        <p class="card-text" id="card-p-4"></p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="card small-card" style="width: 9rem;">
-                    <div class="card-body">
-                      <h5 class="card-title" id="card-title-4"></h5>
-                      <p class="card-text" id="card-subtitle-4"></p>
-                      <p class="card-text" id="card-p-4"></p>
+                    <div class="card small-card">
+                      <div class="card-body">
+                        <h5 class="card-title" id="card-title-5"></h5>
+                        <img id="icon-5" class="icon" src="">
+                        <p class="card-text" id="card-subtitle-5"></p>
+                        <p class="card-text" id="card-p-5"></p>
+                      </div>
                     </div>
-                  </div>
-
-                  <div class="card small-card" style="width: 9rem;">
-                    <div class="card-body">
-                      <h5 class="card-title" id="card-title-5"></h5>
-                      <p class="card-text" id="card-subtitle-5"></p>
-                      <p class="card-text" id="card-p-5"></p>
-                    </div>
-                  </div>
                 </div>
             </div>
         </div>
