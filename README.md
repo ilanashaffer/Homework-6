@@ -1,4 +1,4 @@
-<h1>Weather Dashboard<h1>
+**Weather Dashboard**
 
 ![Weather Dashboard Screenshot](Weather-Dashboard_Screenshot.png)  
 
