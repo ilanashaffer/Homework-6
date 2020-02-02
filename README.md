@@ -1,4 +1,4 @@
-**Weather Dashboard**
+Weather Dashboard
 
 ![Weather Dashboard Screenshot](Weather-Dashboard_Screenshot.png)  
 
