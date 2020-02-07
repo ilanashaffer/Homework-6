@@ -101,8 +101,6 @@ searchButton.addEventListener("click", function(event) {
             method: "GET"
         }).done(function (response3) {
 
-            console.log(response3);
-
             let tomorrowDate = moment().add(1, 'days').format("M/DD/YYYY");
             let secondDate = moment().add(2, 'days').format("M/DD/YYYY");
             let thirdDate = moment().add(3, 'days').format("M/DD/YYYY");
@@ -157,11 +155,11 @@ function removeSearches() {
     }
 };
 
+
 // if li search item clicked, prepend to list and call search function (to be made)
 
 ulList.addEventListener("click", function(event) {
     let recentSearchValue = event.target.textContent;
-    console.log(recentSearchValue);
     $(ulList).prepend(event.target);
 
     $("#your-weather").remove();
@@ -256,5 +254,14 @@ ulList.addEventListener("click", function(event) {
     }); // first ajax function closing
 
 }) // li click event closing
+
+
+
+
+
+
+
+
+
 
 }); // jquery document ready closing

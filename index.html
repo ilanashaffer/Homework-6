@@ -19,8 +19,21 @@
     <div class="container">
         <div class="row">
             <div class="col-3 p-3 section1">
-                <input type="text" id="user-input" placeholder="City Name">
-                <button id="search-button">Search</button>
+    
+              <!--  <input type="text" id="user-input" placeholder="City Name"> -->
+
+
+              <div class="input-group mb-3">
+                <input type="text" id="user-input" class="form-control" placeholder="City name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button id="search-button" class="btn btn-outline-secondary" type="button">Search</button>
+                </div>
+              </div>
+
+
+                <!--  <button id="search-button">Search</button>  -->
+
+
                 <p class="h6 pt-3 pb-1" id="recent-searches-text">Recent Searches</p>
                 <ul class="list-group" id="ul-list">
                 </ul>

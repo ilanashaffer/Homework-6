@@ -6,7 +6,7 @@ This is a Weather Dashboard application that allows a user to search for a city'
 
 The user can look back on recent searches and click on a particular searched city to resubmit that city for the weather information. The recent searches tab will display and locally store the last 10 recent searches.  
 
-This application was built with HTML, styed with CSS and Bootstrap, and made functional jusing Javascript and jQuery. Font Awesome and Moment.js were also utilized.  
+This application was built with HTML, styed with CSS and Bootstrap, and made dynamic using Javascript and jQuery. Font Awesome and Moment.js were also utilized.  
 
 Project files:  
 
