@@ -16,7 +16,7 @@ Project files:
 
 
 Deployed Web Page:  
-https://ilanashaffer.github.io/Homework-6/  
+https://ilanashaffer.github.io/Weather-Dashboard
 
 Built with:  
 Visual Studio Code  
@@ -29,7 +29,4 @@ Bootstrap
 Font Awesome  
 
 Authors:  
-Ilana Shaffer  
-
-Acknowledgments:  
-University of Denver - Bootcamp Spot Assignment
+Ilana Shaffer
